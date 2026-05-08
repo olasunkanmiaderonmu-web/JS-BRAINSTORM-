@@ -112,7 +112,7 @@ function animateScore(targetPercent) {
     } else {
       current++;
     }
-  }, 5);
+  }, 20);
 }
 
 
