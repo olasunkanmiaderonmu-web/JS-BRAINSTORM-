@@ -312,12 +312,12 @@ if (quizAreaSubmitBtn) {
 
 
 homeBtn.addEventListener("click", function () {
-  location.href = "quiz.html";
+  location.href = "JS Brainstorm.html";
 });
 
 
 homeNav.addEventListener("click", function () {
-  location.href = "quiz.html"; // change to your home page file
+  location.href = "JS Brainstorm.html"; // change to your home page file
 });
 
 
@@ -424,7 +424,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // Footer navigation (same behavior as navbar)
 document.querySelector('.footer-home').addEventListener('click', (e) => {
   e.preventDefault();
-  location.href = "quiz.html";
+  location.href = "JS Brainstorm.html";
 });
 
 document.querySelector('.footer-about').addEventListener('click', (e) => {
