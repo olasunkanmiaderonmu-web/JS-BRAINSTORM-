@@ -48,6 +48,7 @@ let dashboardNav = document.querySelector('.dashboard');
 let aboutStartBtn = document.querySelector('.about-start-btn');
 let theoryBtn = document.querySelector('.theory-btn');
 let theoryData = document.querySelector('.theory-data');
+let inprove = document.querySelector('.improve');
 
 theoryBtn.addEventListener('click', e=>{
   e.preventDefault();
@@ -217,6 +218,50 @@ aboutStartBtn.addEventListener('click', e => {
   categories.scrollIntoView();
 });
 
+
+
+const scoreDisplay = document.getElementById("scoreDisplay");
+
+function showScore(score){
+
+    scoreDisplay.innerText = score + "%";
+
+    // Bounce effect when score appears
+    scoreDisplay.animate(
+        [
+            { transform: "scale(0.5)", opacity: 0 },
+            { transform: "scale(1.3)", opacity: 1 },
+            { transform: "scale(1)", opacity: 1 }
+        ],
+        {
+            duration: 700,
+            easing: "ease"
+        }
+    );
+
+    // Dynamic color based on score
+    if(score < 40){
+        scoreDisplay.classList.remove("text-success","text-warning");
+        scoreDisplay.classList.add("text-danger");
+    }
+
+    else if(score < 70){
+        scoreDisplay.classList.remove("text-success","text-danger");
+        scoreDisplay.classList.add("text-warning");
+    }
+
+    else{
+        scoreDisplay.classList.remove("text-warning","text-danger");
+        scoreDisplay.classList.add("text-success");
+    }
+}
+
+/* Example */
+showScore(85);
+
+
+
+
 // take quiz again 
 takebtn.addEventListener('click', e => {
   e.preventDefault();
@@ -383,6 +428,7 @@ categoryButtons.forEach(button => {
     calBtn.classList.remove('d-none')
     powered.style.display = 'none';
     startQuizNav.style.display = 'none';
+    beginJourney.style.display = 'none';
 
 
   });
