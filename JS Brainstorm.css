@@ -551,3 +551,29 @@ ul .start-btn {
         transform: translateY(-40px) rotate(-360deg);
     }
 }
+
+
+
+
+.score-animation{
+    font-size: 5rem;
+    display: inline-block;
+    transition: all 0.4s ease;
+    animation: floatScore 2s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floatScore{
+
+    0%{
+        transform: translateY(0) scale(1);
+    }
+
+    50%{
+        transform: translateY(-10px) scale(1.08);
+    }
+
+    100%{
+        transform: translateY(0) scale(1);
+    }
+}
