@@ -158,15 +158,22 @@ window.dataLayer = window.dataLayer || [];
 
 
     <!-- result section -->
-    <div class="result py-5 bg-light d-none text-center">
-        <div class="container py-4 mt-5">
-            <!-- <h2 class="fw-bold text-black mb-3">Quiz Complete! </h2> -->
-            <p class="lead text-black fw-semibold mb-1">Your Score:</p>
-            <div class="p-3">
-                <span class="text-success fw-bold" style="font-size:5rem;transition:color 0.5s;">0%</span>
-            </div>
+<div class="result py-5 bg-light d-none text-center">
+    <div class="container py-4 mt-5">
+
+        <p class="lead text-black fw-semibold mb-1">
+            Your Score:
+        </p>
+
+        <div class="p-3">
+            <span id="scoreDisplay"
+                class="text-success fw-bold score-animation">
+                0%
+            </span>
         </div>
+
     </div>
+</div>
 
     <div class="take-quiz d-none">
         <button type="button" class="btn btn-success btn-sm me-3 takebtn">Take Quiz Again</button>
@@ -175,7 +182,7 @@ window.dataLayer = window.dataLayer || [];
         </button>
     </div>
 
-    <p class="text-center my-2 font-family-Times New Roman fw-bold text-success journey">Let's begin your quiz journey!
+    <p class="text-center px-5 my-4 font-family-Times New Roman fw-semibold text-muted journey"> Let’s improve your coding journey by learning, building, and solving real-world problems.
     </p>
 
 
@@ -320,7 +327,7 @@ window.dataLayer = window.dataLayer || [];
     <!-- categories section -->
     <section id="categories" class="py-5">
         <div class="container py-5">
-            <h2 class="text-center mb-5 text-success fw-bold">JavaScript Quiz Categories</h2>
+            <h2 class="text-center mb-5 text-success fw-bold">JavaScript Categories</h2>
 
             <div class="row g-4">
 
