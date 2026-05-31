@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JS Brainstorm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>JS Brainstorm</title>
+
+
+    Google tag (gtag.js)
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZ6NN4MRMS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-TZ6NN4MRMS');
+    </script>
+
+
+</head>
+
+<body class="bg-light">
+
+
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-lg bg-success p-3 fixed-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-patch-question-fill fs-3 text-white me-2"></i>
+                <span class="fw-bold text-light">JS Brainstorm</span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold home" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold about" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold categories" href="#categories">Categories</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold dashboard" href="#dashboard">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 fw-semibold" href="#feedback">Feedback</a>
+                    </li>
+
+
+                    <!-- Start Quiz Button -->
+                    <li class="nav-item ms-3">
+                        <a href="#"
+                            class="btn btn-success bg-light d-none text-success p-2 fw-bold start-quiz-nav">Start
+                            Quiz</a>
+                    </li> 
+
+                </ul>
+
+            </div>
+
+            <li class="nav-item nav-item-list ms-3 before-timer rounded-pill d-none">
+                <a href="#" class="btn btn-success start-btn bg-light fw-bold text-success timer"></a>
+            </li>
+
+        </div>
+    </nav>
+
+
+
+    <!-- landing page -->
+
+    <!-- top-section -->
+    <div class="intro py-3 text-center box">
+
+        <div class="top">
+            <div class="container welcome-box pt-4 mt-5">
+                <h2 class="text-success display-4 my-4 fw-bold"><span
+                        class="text-black fw-semibold mt-5 welcome">Welcome
+                        to</span><br>JS Brainstorm</h2>
+                <p class="test">Test your knowledge, challenge your mind, and learn something new everyday.<br>
+                    <span class="fw-semibold text-success">Are you ready to take the challenge?</span>
+                </p>
+            </div>
+
+
+
+            <div class="text-container p-5 mybox">
+                <div class="row text-box">
+
+                    <div class="col-md-4">
+                        <div class="card custom-card rounded-4 text-center bg-light">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-journal-code text-success"></i>
+                                </div>
+                                <h5 class="card-title text-success">Test Your Knowledge</h5>
+                                <p class="card-text">
+                                    Explore a wide range of topics and questions
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card custom-card rounded-4 text-center bg-light">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-trophy text-success"></i>
+                                </div>
+                                <h5 class="card-title text-success">Challenge Yourself</h5>
+                                <p class="card-text">
+                                    Improve your score and beat your best
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card custom-card rounded-4 text-center bg-light">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <div class="card-icon">
+                                    <i class="bi bi-graph-up-arrow text-success"></i>
+                                </div>
+                                <h5 class="card-title text-success">Track Your Progress</h5>
+                                <p class="card-text">
+                                    See your score and how you improve overtime
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="timing sticky-top">
+            <button type="button" class="btn btn-success shadow-sm rounded-4 btn-lg btn-hover-lift startbtn">Start
+                Quiz</button>
+            <h1 class="timely fw-bold text-success">1 hour</h1>
+        </div>
+    </div>
+
+
+
+    <!-- result section -->
+    <div class="result py-5 d-none text-center">
+        <div class="container py-4 mt-5">
+
+            <p class="lead text-black fw-semibold mb-1">
+                Your Score:
+            </p>
+
+            <div class="p-3">
+                <span id="scoreDisplay" class="text-success fw-bold score-animation">
+                    0%
+                </span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Wrong Answers Review -->
+    <div class="container my-5 d-none" id="reviewContainer">
+        <h3 class="text-danger fw-bold mb-4 text-center">
+            Questions You Got Wrong
+        </h3>
+
+        <div id="wrongAnswers"></div>
+    </div>
+
+
+
+
+
+
+    <div class="take-quiz mb-5 d-none">
+        <button type="button" class="btn btn-success btn-sm me-3 takebtn">Take Quiz Again</button>
+        <button id="homeBtn" class="btn btn-success d-none">
+            Go To Home
+        </button>
+    </div>
+
+   <!--  <p class="text-center px-5 my-4 font-family-Times New Roman fw-semibold text-muted journey"> Let’s improve your
+        coding journey by learning, building, and solving real-world problems.
+    </p> -->
+
+
+
+
+    <!-- calculator section -->
+
+    <div class="calculator position-fixed top-0 end-0 m-3">
+        <button type="button" class="btn btn-success btn-sm d-none calculator-btn">Calculator</button>
+    </div>
+
+
+    <div class="position-fixed end-0 d-none calc-container">
+        <div class="card p-3 shadow-lg bg-success  calc-box">
+            <input type="text" id="display" class="form-control mb-3 text-end fs-4" value="" disabled>
+
+            <div class="row g-2">
+                <div class="col-3">
+                    <button class="btn btn-danger w-100" data-value="C">C</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-warning w-100" data-value="DEL">DEL</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-light w-100" data-value="/">/</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-light w-100" data-value="*">*</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="7">7</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="8">8</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="9">9</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-light w-100" data-value="-">-</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="4">4</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="5">5</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="6">6</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-light w-100" data-value="+">+</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="1">1</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="2">2</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="3">3</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-light w-100" data-value="=">=</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value="0">0</button>
+                </div>
+
+                <div class="col-3">
+                    <button class="btn btn-success w-100" data-value=".">.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- abou section -->
+
+    <section id="about" class="py-5">
+        <div class="about-container px-5 px-md-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-success">About JS Brainstorm</h2>
+                <p class="text-muted">Learn, test and improve your knowledge about JavaScript</p>
+            </div>
+
+            <div class="row align-items-center g-5 about-row">
+
+                <!-- image slider -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="quiz.png" class="img-fluid w-40 about-img" alt="quiz app">
+                </div>
+
+                <!-- text side -->
+                <div class="col-md-6">
+                    <h4 class="fw-semibold mb-3 text-success">Why Choose JS Brainstorm</h4>
+                    <p class="text-muted about-text">
+                        JS Brainstorm is an interactive and engaging quiz application designed to challlenge
+                        users' knowledge while making learning fun and accessible. Built with modern web
+                        technologies, the platform offers a wide range of quiz categories, allowing users to Test their
+                        understanding across different topics and improve their skill overtime. With a clean and
+                        intuitive
+                        interface, users can easily navigate through questions, track their progress, and recieve
+                        Instant feedback
+                        on their performance. Whether you are a student looking to sharpen your knowledge, a developer
+                        practicing
+                        JavaScript concepts, or simply someone who enjoys quizzes, JS Brainstormprovides an enjoyable
+                        and educational experience.
+                    </p>
+
+                     <ul class="list-unstyled">
+                        <li class="mb-2 text-dark fw-semibold shadow-sm">Multiple categories of questions</li>
+                        <li class="mb-2 text-dark fw-semibold shadow-sm">Instant score feedback</li>
+                        <li class="mb-2 text-dark fw-semibold shadow-sm">Mobile-friendly design</li>
+                        <li class="mb-2 text-dark fw-semibold shadow-sm">Easy and smooth user experience</li>
+                    </ul>
+
+
+                    <div class="mb-4">
+                        <div class=""></div>
+                    </div>
+
+
+
+
+                    <a href="#" class="btn btn-success mt-3 about-start-btn">Start Quiz</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- categories section -->
+    <section id="categories" class="py-5">
+        <div class="container py-5">
+            <h2 class="text-center mb-5 text-success fw-bold">JavaScript Categories</h2>
+
+            <div class="row g-4">
+
+                <!-- Category 1 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card category-card rounded-4" style="animation-delay: 0.3s;">
+                        <div class="category-header">JS Basics</div>
+                        <div class="card-body">
+                            <p>Learn the fundamentals of JavaScript including variables, data types, and operators.</p>
+
+                            <div class="level-box mb-3">
+                                <label><input type="radio" name="level-js-basics" value="beginner"> Beginner</label><br>
+                                <label><input type="radio" name="level-js-basics" value="intermediate">
+                                    Intermediate</label><br>
+                                <label><input type="radio" name="level-js-basics" value="advanced"> Advanced</label>
+                            </div>
+
+                            <button class="btn start-btn w-50 btn-success cat-btn" data-category="js-basics">
+                                Start Quiz
+                            </button>
+
+                            <p class="text-success fw-semibold NB">NB: <span class="text-black">Countdown starts at 1 hour.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card category-card rounded-4" style="animation-delay: 0.3s;">
+                        <div class="category-header">DOM Manipulation</div>
+                        <div class="card-body">
+                            <p>Understand how to interact with HTML elements using JavaScript DOM methods.</p>
+
+                            <div class="level-box mb-3">
+                                <label><input type="radio" name="level-dom" value="beginner"> Beginner</label><br>
+                                <label><input type="radio" name="level-dom" value="intermediate">
+                                    Intermediate</label><br>
+                                <label><input type="radio" name="level-dom" value="advanced"> Advanced</label>
+                            </div>
+
+                            <button class="btn start-btn w-50 btn-success cat-btn" data-category="dom">
+                                Start Quiz
+                            </button>
+                            <p class="text-success fw-semibold NB">NB: <span class="text-black">Countdown starts at 1 hour.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card category-card rounded-4" style="animation-delay: 0.3s;">
+                        <div class="category-header">Functions</div>
+                        <div class="card-body">
+                            <p>Master function declarations, expressions, arrow functions, and callbacks.</p>
+
+                            <div class="level-box mb-3">
+                                <label><input type="radio" name="level-functions" value="beginner"> Beginner</label><br>
+                                <label><input type="radio" name="level-functions" value="intermediate">
+                                    Intermediate</label><br>
+                                <label><input type="radio" name="level-functions" value="advanced"> Advanced</label>
+                            </div>
+
+                            <button class="btn start-btn w-50 btn-success cat-btn" data-category="functions">
+                                Start Quiz
+                            </button>
+                            <p class="text-success fw-semibold NB">NB: <span class="text-black">Countdown starts at 1 hour.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 4 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card category-card rounded-4" style="animation-delay: 0.4s;">
+                        <div class="category-header">ES6 Features</div>
+                        <div class="card-body">
+                            <p>Explore modern JavaScript features like let/const, promises, and destructuring.</p>
+
+                            <div class="level-box mb-3">
+                                <label><input type="radio" name="level-es6" value="beginner"> Beginner</label><br>
+                                <label><input type="radio" name="level-es6" value="intermediate">
+                                    Intermediate</label><br>
+                                <label><input type="radio" name="level-es6" value="advanced"> Advanced</label>
+                            </div>
+
+                            <button class="btn start-btn w-50 btn-success cat-btn" data-category="es6">
+                                Start Quiz
+                            </button>
+                            <p class="text-success fw-semibold NB">NB: <span class="text-black">Countdown starts at 1 hour.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category 5 -->
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card category-card rounded-4" style="animation-delay: 0.5s;">
+                        <div class="category-header">Async JavaScript</div>
+                        <div class="card-body">
+                            <p>Learn about callbacks, promises, async/await, and API handling.</p>
+
+                            <div class="level-box mb-3">
+                                <label><input type="radio" name="level-async" value="beginner"> Beginner</label><br>
+                                <label><input type="radio" name="level-async" value="intermediate">
+                                    Intermediate</label><br>
+                                <label><input type="radio" name="level-async" value="advanced"> Advanced</label>
+                            </div>
+
+                            <button class="btn start-btn w-50 btn-success cat-btn" data-category="async">
+                                Start Quiz
+                            </button>
+                            <p class="text-success fw-semibold NB">NB: <span class="text-black">Countdown starts at 1 hour.</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- QUESTION DISPLAY -->
+    <div id="quizArea" class="container mt-5 d-none"></div>
+
+    <!-- Question Navigator -->
+    <div id="questionNavigator" class="container my-5 mb-4 d-none">
+        <div class="card border-0 shadow-sm rounded-4 p-3">
+            <p class="fw-semibold text-success mb-2 small">
+                <i class="bi bi-grid-3x3-gap-fill me-1"></i>Question Navigator
+            </p>
+            <div id="navLegend" class="d-flex align-items-center gap-3 mb-2">
+                <span class="d-flex align-items-center gap-1 small text-muted">
+                    <span class="nav-legend-dot nav-dot-unanswered"></span> Unanswered
+                </span>
+                <span class="d-flex align-items-center gap-1 small text-muted">
+                    <span class="nav-legend-dot nav-dot-answered"></span> Answered
+                </span>
+            </div>
+            <div id="navGrid" class="d-flex flex-wrap gap-1"></div>
+        </div>
+    </div>
+
+    <!-- Submit button — shown only when a quiz is active -->
+    <div class="text-center mt-5 mb-5 d-none quiz-action-submit">
+        <button type="button" class="btn btn-success btn-lg px-5 quiz-area-submit shadow">
+            Submit Quiz
+        </button>
+    </div>
+
+    <div class="mt-5 px-3 mb-5 d-none quiz-action-theory">
+        <h4 class="fw-bold text-success theory-section-title mb-3">Theory <span class="text-dark">(Practical)</span>
+        </h4>
+        <div class="theory-data d-none"></div>
+    </div>
+
+
+
+
+    <!-- dashboard section -->
+    <section id="dashboard" class="py-5 dashboard-section">
+        <div class="container text-center">
+
+            <!-- Header -->
+            <div class="mb-4 dashboard-box">
+                <h2 class="fw-bold dashboard-title text-success">Dashboard</h2>
+                <p class="text-muted dashboard-text">
+                    Dashboard is coming soon. <span class="fw-bold anticipate">Anticipate!</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- ── FEEDBACK SECTION ─────────────────────────────────────────── -->
+    <section id="feedback" class="py-5  feedback-section">
+        <div class="container">
+
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold text-success mt-3 mb-2">We'd Love Your Feedback</h2>
+                <p class="text-muted feedback-sub">Help us improve JS Brainstorm, your experience matters to us.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-md-9" data-aos="fade-up" data-aos-delay="100">
+
+                    <div class="feedback-card p-4 p-md-5 rounded-4 shadow-sm">
+
+                        <!-- Star Rating -->
+                        <div class="mb-4 text-center">
+                            <p class="fw-semibold mb-2 feedback-label">Rate your experience</p>
+                            <div class="star-row" id="starRow">
+                                <span class="star" data-value="1">&#9733;</span>
+                                <span class="star" data-value="2">&#9733;</span>
+                                <span class="star" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                            <p class="star-label mt-2" id="starLabel">Tap a star to rate</p>
+                            <input type="hidden" id="ratingValue" value="0">
+                        </div>
+
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <label for="feedbackName" class="form-label feedback-label">Full Name</label>
+                            <div class="input-group feedback-input-group">
+                                <span class="input-group-text feedback-icon"><i class="bi bi-person-fill"></i></span>
+                                <input type="text" class="form-control feedback-input" id="feedbackName"
+                                    placeholder="Your name" autocomplete="off">
+                            </div>
+                            <div class="feedback-err d-none" id="nameErr">Please enter your name.</div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <label for="feedbackEmail" class="form-label feedback-label">Email Address</label>
+                            <div class="input-group feedback-input-group">
+                                <span class="input-group-text feedback-icon"><i class="bi bi-envelope-fill"></i></span>
+                                <input type="email" class="form-control feedback-input" id="feedbackEmail"
+                                    placeholder="you@example.com" autocomplete="off">
+                            </div>
+                            <div class="feedback-err d-none" id="emailErr">Please enter a valid email.</div>
+                        </div>
+
+                        <!-- Feedback Textarea -->
+                        <div class="mb-4">
+                            <label for="feedbackText" class="form-label feedback-label">Your Feedback</label>
+                            <textarea class="form-control feedback-input feedback-textarea" id="feedbackText" rows="4"
+                                placeholder="Tell us what you think, what you loved, what could be better."
+                                maxlength="800"></textarea>
+                            <div class="d-flex justify-content-between mt-1">
+                                <div class="feedback-err d-none" id="textErr">Please write your feedback.</div>
+                                <small class="text-muted ms-auto" id="charCount">0 / 800</small>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button class="btn btn-success btn-lg feedback-submit-btn fw-semibold"
+                                id="feedbackSubmitBtn">
+                                <span id="submitBtnText">Send Feedback</span>
+                                <!-- Spinner -->
+                                <span id="submitSpinner" class="d-none ms-2">
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
+                                    Sending…
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div class="feedback-success d-none mt-4" id="feedbackSuccess">
+                            <div class="success-icon-wrap mx-auto mb-3">
+                                <i class="bi bi-check-lg success-check"></i>
+                            </div>
+                            <h5 class="fw-bold text-success mb-1">Thank you!</h5>
+                            <p class="text-muted mb-0">Your feedback has been sent successfully. We really appreciate
+                                it!</p>
+                        </div>
+
+                    </div><!-- /feedback-card -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ── END FEEDBACK SECTION ──────────────────────────────────────── -->
+
+    <footer class="bg-success text-light pt-4 pb-3 footer-section">
+        <div class="container">
+            <div class="row">
+
+                <!-- Brand -->
+                <div class="col-md-4 mb-3 footer-box">
+                    <h5 class="fw-bold footer-title">JS Brainstorm</h5>
+                    <p class="small text-black footer-text">
+                        Test your knowledge, challenge your mind, and grow your JavaScript skills.
+                    </p>
+                </div>
+
+                <!-- Links -->
+                <div class="col-md-4 mb-3 footer-box">
+                    <h6 class="fw-bold footer-title">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-black text-decoration-none footer-link">Home</a></li>
+                        <li><a href="#about" class="text-black text-decoration-none footer-link">About</a></li>
+                        <li><a href="#categories" class="text-black text-decoration-none footer-link">Categories</a>
+                        </li>
+                        <li><a href="#dashboard" class="text-black text-decoration-none footer-link">Dashboard</a></li>
+                        <li><a href="#feedback" class="text-black text-decoration-none footer-link">Feedback</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info -->
+                <div class="col-md-4 mb-3 footer-box">
+                    <h6 class="fw-bold footer-title">Info</h6>
+                    <p class="small mb-1 text-black footer-text">Built for learning and practice</p>
+                    <p class="small text-black footer-text">Timer-based quiz experience</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="text-center pt-3 border-top border-light footer-bottom">
+                <p class="mb-0 small copyright-text">
+                    &copy; <span id="year"></span> JS Brainstorm. All rights reserved.
+                </p>
+
+                <p class="text-center text-black powered">
+                    Powered By:
+                    <span class="text-black fw-semibold">Szkay Design Agency</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="JS Brainstorm.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Feedback Section Script -->
+    <script>
+        (function () {
+            // ── EmailJS init
+            // Replace YOUR_PUBLIC_KEY with your EmailJS public key after sign-up
+            emailjs.init('ecMuNXpEe5pxFOnAz');
+
+            const SERVICE_ID = 'service_dmkawnm';   // from EmailJS dashboard
+            const TEMPLATE_ID = 'template_ckt9e1p';  // from EmailJS dashboard
+            const TO_EMAIL = 'olasunkanmiaderonmu@gmail.com';
+            
+            // ── Element
+            const stars = document.querySelectorAll('.star');
+            const starLabel = document.getElementById('starLabel');
+            const ratingInput = document.getElementById('ratingValue');
+            const nameEl = document.getElementById('feedbackName');
+            const emailEl = document.getElementById('feedbackEmail');
+            const textEl = document.getElementById('feedbackText');
+            const charCount = document.getElementById('charCount');
+            const submitBtn = document.getElementById('feedbackSubmitBtn');
+            const submitText = document.getElementById('submitBtnText');
+            const submitSpinner = document.getElementById('submitSpinner');
+            const successBox = document.getElementById('feedbackSuccess');
+            const nameErr = document.getElementById('nameErr');
+            const emailErr = document.getElementById('emailErr');
+            const textErr = document.getElementById('textErr');
+
+            const starLabels = ['', 'Poor', 'Fair', 'Good', 'Great', 'Excellent!'];
+            let selectedRating = 0;
+
+            // ── Star Rating ───────────────────────────────────────────────
+            stars.forEach(star => {
+                star.addEventListener('mouseover', () => highlightStars(+star.dataset.value));
+                star.addEventListener('mouseout', () => highlightStars(selectedRating));
+                star.addEventListener('click', () => {
+                    selectedRating = +star.dataset.value;
+                    ratingInput.value = selectedRating;
+                    highlightStars(selectedRating);
+                    starLabel.textContent = starLabels[selectedRating];
+                    starLabel.className = 'star-label mt-2 star-label--active';
+                });
+            });
+
+            function highlightStars(count) {
+                stars.forEach(s => {
+                    s.classList.toggle('active', +s.dataset.value <= count);
+                });
+            }
+
+            // ── Character counter ─────────────────────────────────────────
+            textEl.addEventListener('input', () => {
+                charCount.textContent = `${textEl.value.length} / 800`;
+            });
+
+            // ── Validation ────────────────────────────────────────────────
+            function validate() {
+                let valid = true;
+                const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+                nameErr.classList.toggle('d-none', !!nameEl.value.trim());
+                if (!nameEl.value.trim()) valid = false;
+
+                emailErr.classList.toggle('d-none', emailRe.test(emailEl.value.trim()));
+                if (!emailRe.test(emailEl.value.trim())) valid = false;
+
+                textErr.classList.toggle('d-none', !!textEl.value.trim());
+                if (!textEl.value.trim()) valid = false;
+
+                return valid;
+            }
+
+            // ── Submit ────────────────────────────────────────────────────
+            submitBtn.addEventListener('click', async () => {
+                if (!validate()) return;
+
+                // Show loading state
+                submitText.classList.add('d-none');
+                submitSpinner.classList.remove('d-none');
+                submitBtn.disabled = true;
+
+                const templateParams = {
+                    to_email: TO_EMAIL,
+                    from_name: nameEl.value.trim(),
+                    from_email: emailEl.value.trim(),
+                    rating: `${selectedRating} / 5 stars ${selectedRating ? '★'.repeat(selectedRating) : ''}`,
+                    message: textEl.value.trim(),
+                };
+
+                try {
+                    await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
+                    // Success state
+                    submitBtn.classList.add('d-none');
+                    successBox.classList.remove('d-none');
+                    successBox.classList.add('feedback-success--show');
+                } catch (err) {
+                    console.error('EmailJS error:', err);
+                    submitText.textContent = 'Failed – try again';
+                    submitText.classList.remove('d-none');
+                    submitSpinner.classList.add('d-none');
+                    submitBtn.disabled = false;
+                    submitBtn.classList.add('btn-danger');
+                    submitBtn.classList.remove('btn-success');
+                }
+            });
+        })();
+    </script>
+</body>
+
+</html>
